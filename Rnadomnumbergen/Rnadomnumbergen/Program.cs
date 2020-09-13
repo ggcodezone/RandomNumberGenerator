@@ -14,7 +14,7 @@ namespace Rnadomnumbergen
     {
         static void Main(string[] args)
         {
-            int Min = 1;
+            int Min = 1; //sets the minimum and maximum values for the generated numbers (they wont exceed max, wont be under min)
             int Max = 300;
 
             // this declares an integer array (you can set the number of elements you want in the brackets next to "new int"
@@ -27,7 +27,7 @@ namespace Rnadomnumbergen
                 numbergen[i] = randNum.Next(Min, Max);
             }
 
-            Console.WriteLine(string.Join("\n", numbergen));
+            Console.WriteLine(string.Join("\n", numbergen)); //prints the list of random numbers
             Console.WriteLine("let's find the instances of our target number in this array.");
             
             for(int i= 0; i<numbergen.Length; i++)
