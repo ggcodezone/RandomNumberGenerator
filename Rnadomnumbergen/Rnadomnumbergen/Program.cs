@@ -2,9 +2,10 @@
 using System.ComponentModel.DataAnnotations;
 using System.Net;
 
-//Name:Random Number Generator
+//Name:Random Number Generator and Locator 
 //Author: Gwen Kalasky
-//Synopsis: Generates list of random numbers and displays, you can set how many numbers you would like generated
+//Synopsis: Generates list of random numbers and displays it; you can set how many numbers you would like generated
+//you can then search the list for instances of a specific number
 //Date: 9/8/20
 
 namespace Rnadomnumbergen
