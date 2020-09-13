@@ -13,13 +13,20 @@ namespace Rnadomnumbergen
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
-            for(int i=0; i<100; i++) // i < number of elements to put in the array
+            int Min = 1;
+            int Max = 300;
+
+            // this declares an integer array (you can set the number of elements you want in the brackets next to "new int"
+            // initializes all of them to their default value which is zero
+            int[] numbergen = new int[100];
+
+            Random randNum = new Random();
+            for (int i = 0; i < numbergen.Length; i++)
             {
-                Console.WriteLine(random.Next());
+                numbergen[i] = randNum.Next(Min, Max);
             }
 
-            Console.ReadLine();
+            Console.WriteLine(string.Join("\n", numbergen));
 
         }
     }
