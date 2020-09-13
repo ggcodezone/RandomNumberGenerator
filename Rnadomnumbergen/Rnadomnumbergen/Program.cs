@@ -27,6 +27,18 @@ namespace Rnadomnumbergen
             }
 
             Console.WriteLine(string.Join("\n", numbergen));
+            Console.WriteLine("let's find the instances of our target number in this array.");
+            
+            for(int i= 0; i<numbergen.Length; i++)
+            {
+                if(numbergen[i]== 20){ //input number you want to look for after [i]==
+                    Console.WriteLine("Instance of number found in the array at this position.");
+            }
+                else
+                {
+                    Console.WriteLine("There was no instance of the number in this position.");
+                }
+            }
 
         }
     }
